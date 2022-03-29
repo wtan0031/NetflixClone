@@ -23,8 +23,6 @@ enum APIError: Error {
 class APICaller {
     static let shared = APICaller()
     
-    
-    
     func getTrendingMovies(completion: @escaping (Result<[Title], Error>) -> Void) {
         // url setup
         // change 'all' to 'movie' to get only the specific data
@@ -63,7 +61,6 @@ class APICaller {
             }
             
         }
-        // the task above is created but in the pause status, hence
         task.resume()
     }
     
@@ -81,7 +78,6 @@ class APICaller {
             }
             
         }
-        // the task above is created but in the pause status, hence
         task.resume()
     }
     
@@ -99,7 +95,6 @@ class APICaller {
             }
             
         }
-        // the task above is created but in the pause status, hence
         task.resume()
     }
     
@@ -118,7 +113,6 @@ class APICaller {
             }
             
         }
-        // the task above is created but in the pause status, hence
         task.resume()
     }
     
@@ -136,7 +130,6 @@ class APICaller {
             }
             
         }
-        // the task above is created but in the pause status, hence
         task.resume()
     }
     
@@ -157,7 +150,6 @@ class APICaller {
             }
             
         }
-        // the task above is created but in the pause status, hence
         task.resume()
     }
     
@@ -177,14 +169,7 @@ class APICaller {
             }
             
         }
-        // the task above is created but in the pause status, hence
         task.resume()
         
     }
-    
-    
 }
-
-
-// https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&page=1
-// https://api.themoviedb.org/3/discover/movie?api_key=<<api_key>>&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate
