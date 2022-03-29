@@ -17,7 +17,7 @@ struct TrendingTitleResponse: Codable {
 // Model
 struct Title: Codable {
     let id: Int
-    let media_type: String? // let it be optional , if the db did not provide us , it will not crash
+    let media_type: String? 
     let original_name: String?
     let original_title: String?
     let poster_path: String?
